@@ -10,7 +10,7 @@ body{
 }
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 /* COLORS */
@@ -30,7 +30,6 @@ body{
     width: 100%;
     height: 100vh;
     max-height: 650px;
-    margin-bottom: 100px;
     background-color: var(--Light-Grayish-Blue);
 }
 /* NAVIGATION BAR */
@@ -198,3 +197,67 @@ body{
     background-color: var(--Very-Light-Gray);
 }
 /* ------------------------------HEADER STYLE END------------------------------ */
+
+/* ------------------------------ABOUT STYLE START------------------------------ */
+/* ABOUT */
+.about{
+    background-color: var(--Very-Light-Gray);
+    padding: 100px 0;
+}
+.about .container h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--Dark-Blue);
+    margin-bottom: 30px;
+}
+.about .container p{
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 30px;
+}
+/* SERVICES */
+.services{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service{
+    width: 290px;
+}
+.service img{
+    margin-bottom: 30px;
+}
+.service h3{
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.service p{
+    width: 95%;
+    text-align: justify;
+}
+/* MOBILE */
+@media only screen and (max-width: 760px){
+    /* ABOUT */
+    .about .container h2 , .about .container p{
+        text-align: center;
+    }
+    /* SERVICES */
+    .service{
+        width: 90%;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    .service p{
+        text-align: center;
+        width: 100%;
+    }
+}
+/* ------------------------------ABOUT STYLE END------------------------------ */
