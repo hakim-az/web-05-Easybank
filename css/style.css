@@ -6,7 +6,6 @@
 }
 body{
    font-family: sans-serif;
-   height: 1000vh;
 }
 .container{
     width: 90%;
@@ -328,3 +327,119 @@ body{
     }
 }
 /* ------------------------------ARTICLES STYLE END------------------------------ */
+
+/* ------------------------------FOOTER STYLE START------------------------------ */
+/* FOOTER */
+.footer{
+    background-color: var(--Dark-Blue);
+    padding: 80px 0;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+/* FOOTER LINKS */
+.footer-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.media-icons img{
+    margin-right: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    margin-bottom: 20px;
+}
+.menu ul li:last-child{
+    margin-bottom: 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--White);
+}
+/* FOOTER BUTTON */
+.footer-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-button span{
+    color: var(--Grayish-Blue);
+}
+/* MOBILE */
+@media only screen and (max-width: 760px){
+    /* FOOTER */
+    .footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* FOOTER LINKS*/
+    .footer-links{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .media{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .media > img{
+        background-color: var(--White);
+        padding: 5px 15px;
+    }
+    .media-icons{
+        width: 85%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .media-icons img{
+        width: 30px;
+        margin-right: 0;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: var(--White);
+    }
+    /* FOOTER BUTTON */
+    .footer-button{
+        align-items: center;
+    }
+    .footer-button span{
+        margin-top: 30px;
+    }
+}
+/* ------------------------------FOOTER STYLE END------------------------------ */
